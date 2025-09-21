@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net9.0": {}
+    "net9.0": {
+      "RDECommerce.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/RDECommerce.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/RDECommerce.Domain.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "RDECommerce.Domain/1.0.0": {
+      "type": "project",
+      "path": "../RDECommerce.Domain/RDECommerce.Domain.csproj",
+      "msbuildProject": "../RDECommerce.Domain/RDECommerce.Domain.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net9.0": []
+    "net9.0": [
+      "RDECommerce.Domain >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\reson\\.nuget\\packages\\": {},
@@ -38,7 +57,11 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Dev\\Projects\\.NET\\RDECommerceSolution\\RDECommerce.Domain\\RDECommerce.Domain.csproj": {
+              "projectPath": "C:\\Dev\\Projects\\.NET\\RDECommerceSolution\\RDECommerce.Domain\\RDECommerce.Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
